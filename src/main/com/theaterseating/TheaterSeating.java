@@ -20,7 +20,7 @@ public class TheaterSeating
 		String line;
 		boolean isValid = true;;
 		Scanner input = new Scanner(System.in);
-        while (!(line = input.nextLine()).equals(Constants.EMPTYSTRING))
+        while (!(line = input.nextLine()).isEmpty())
         {
         	if(Character.isDigit(line.charAt(0)))
         	{
@@ -32,7 +32,7 @@ public class TheaterSeating
         		System.out.println("Theater Layout input is invalid. Please refer README for the input data format.");
         	}
         }
-        while (!(line = input.nextLine()).equals(Constants.EMPTYSTRING))
+        while (!(line = input.nextLine()).isEmpty())
         {
         	if(Pattern.compile("^[A-Z]").matcher(line).find())
         	{
